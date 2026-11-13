@@ -408,19 +408,34 @@ footer a{text-decoration:none;color:var(--blue)}
   <div class="sh rv"><h2>Projects</h2><hr></div>
   <div class="sec-head rv">
     <div>
-      <p>Hands-on IAM labs and ITGC control tests. Each one names the control it proves and shows the evidence.</p>
+      <p>Business analysis work, hands-on IAM labs and ITGC control tests. Each one names what it proves and shows the evidence.</p>
     </div>
     <a href="https://github.com/ChrisAshleyTech" target="_blank" rel="noopener">github.com/ChrisAshleyTech →</a>
   </div>
   <div class="tabs" role="tablist" aria-label="Filter projects by platform" id="tabs">
     <button type="button" role="tab" data-f="all" aria-selected="true">All <span></span></button>
+    <button type="button" role="tab" data-f="ba" aria-selected="false">Business analysis <span></span></button>
     <button type="button" role="tab" data-f="aws" aria-selected="false">AWS <span></span></button>
     <button type="button" role="tab" data-f="microsoft" aria-selected="false">Microsoft <span></span></button>
     <button type="button" role="tab" data-f="okta" aria-selected="false">Okta <span></span></button>
     <button type="button" role="tab" data-f="security" aria-selected="false">Security &amp; audit <span></span></button>
   </div>
-  <!-- Each card's data-cat lists its tabs (aws, microsoft, okta, security). A tab with no cards stays hidden. -->
+  <!-- Each card's data-cat lists its tabs (ba, aws, microsoft, okta, security). A tab with no cards stays hidden. -->
   <div class="grid" id="pgrid">
+      <article class="proj" data-cat="ba">
+        <span class="repo">ChrisAshleyTech/rolevara-funnel-audit</span>
+        <h4>Learner funnel and tracking audit</h4>
+        <p>Queried real usage data from Rolevara, the job-simulation platform I built, with SQL. Found that the event log undercounts what learners do and that no outside learner returned after day one, then wrote a 6-issue data-quality log and requirements to fix it.</p>
+        <div class="chips"><span class="chip">SQL</span><span class="chip">Funnel analysis</span><span class="chip">Data quality</span><span class="chip">Requirements</span></div>
+        <a href="https://github.com/ChrisAshleyTech/rolevara-funnel-audit" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+      <article class="proj" data-cat="ba security">
+        <span class="repo">ChrisAshleyTech/p2p-invoice-automation-ba</span>
+        <h4>P2P invoice automation package</h4>
+        <p>A full BA package for moving AP invoice processing to an automated ERP workflow: as-is and to-be process flow, 21 traced requirements, a 7-rule SoD matrix and an 18-case UAT plan.</p>
+        <div class="chips"><span class="chip">BPMN</span><span class="chip">Requirements</span><span class="chip">SoD matrix</span><span class="chip">UAT</span></div>
+        <a href="https://github.com/ChrisAshleyTech/p2p-invoice-automation-ba" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
       <article class="proj" data-cat="aws">
         <span class="repo">ChrisAshleyTech/aws-iam-least-privilege-user</span>
         <h4>Least-privilege IAM user</h4>
